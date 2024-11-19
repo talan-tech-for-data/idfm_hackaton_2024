@@ -1,6 +1,6 @@
 [tool.poetry]
 package-mode = false
-name = "ratp_hackaton_2024"
+name = "idfm_hackaton_2024"
 version = "0.1.0"
 description = ""
 
