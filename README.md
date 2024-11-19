@@ -24,8 +24,23 @@ Go to http://localhost on port 80
 
 Then you can login for the first time.
 
+## To setup this project in Onyxia's VSCode
+- Run:
+```sh
+sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
 
+git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
 
+sudo apt-get update -y
+sudo apt-get install -y pipx
+
+pipx install poetry
+
+poetry config virtualenvs.in-project true
+
+poetry install
+
+```
 
 
 
