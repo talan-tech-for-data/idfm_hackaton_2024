@@ -1,4 +1,4 @@
-# ratp_hackaton_2024
+# idfm_hackaton_2024
 
 ## Install Windmill
 Make sure Docker is started:
