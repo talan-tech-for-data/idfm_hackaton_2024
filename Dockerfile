@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Set the same wd as in the devcontainer.json
-WORKDIR /workspaces/ratp_hackaton_2024
+WORKDIR /workspaces/idfm_hackaton_2024
 COPY . .
 
 # Install minimal dependencies
