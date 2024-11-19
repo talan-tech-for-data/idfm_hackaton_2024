@@ -23,3 +23,12 @@ Go to http://localhost on port 80
 ![alt text](image.png)
 
 Then you can login for the first time.
+
+
+
+
+
+
+
+## Other Notes
+https://openwebui.com/assets/files/whitepaper.pdf
