@@ -1,10 +1,10 @@
 {
-	"name": "ratp_hackaton_2024",
+	"name": "idfm_hackaton_2024",
 
 	"dockerComposeFile": ["../devcontainer-docker-compose.yaml"],
 	"service": "devcontainer",
 
-	"workspaceFolder": "/workspaces/ratp_hackaton_2024", // This is needed so that postCreateCommand can run in this same folder.
+	"workspaceFolder": "/workspaces/idfm_hackaton_2024", // This is needed so that postCreateCommand can run in this same folder.
 
 	// Configure tool-specific properties.
 	"customizations": {
