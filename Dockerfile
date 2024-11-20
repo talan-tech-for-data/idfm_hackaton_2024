@@ -1,4 +1,4 @@
-FROM ubuntu-20.04
+FROM ubuntu:20.04
 
 # Set the same wd as in the devcontainer.json
 WORKDIR /workspaces/idfm_hackaton_2024
