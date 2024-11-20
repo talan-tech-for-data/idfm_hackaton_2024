@@ -1,18 +1,29 @@
 [tool.poetry]
-package-mode = false
-name = "idfm_hackaton_2024"
+name = "idfmhk24"
 version = "0.1.0"
 description = ""
+authors = ["Team 9"]
+packages = [
+    { include = "idfmhk24", from = "src" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-pylint = "^3.1.0"
+python = "^3.12"
 sqlfluff = "^3.0.6"
 pandas = "^2.2.2"
 openpyxl = "^3.1.4"
+duckdb = "^1.1.3"
+polars = "^1.14.0"
+networkx = "^3.4.2"
+plotly = "^5.24.1"
+seaborn = "^0.13.2"
+pyarrow = "^18.0.0"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.4"
+pylint = "^3.1.0"
 
 [build-system]
 requires = ["poetry-core"]
