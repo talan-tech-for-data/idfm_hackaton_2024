@@ -1,6 +1,6 @@
 # idfm_hackaton_2024
 
-## To setup this project in Onyxia's VSCode
+## To Setup this project in Onyxia's VSCode
 - Run:
 ```sh
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
@@ -29,9 +29,9 @@ npm install
 
 ```
 
-## Install Sveltekit in Local Devcontainer
+## To Install Sveltekit in Local Devcontainer or Github's devcontainer
 ### To start work, from zero:
-
+- Run:
 ```bash
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -48,13 +48,13 @@ npm install
 
 ```
 
-### Start dev:
+### To Start dev in sveltekit:
 ```bash
 # start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-### Other notes
+### Other notes on sveltekit
 ```bash
 nvm use 20
 npm run build
@@ -64,7 +64,10 @@ npm run build
 npm run preview -- --open
 ```
 
-## Install Windmill
+
+
+## Other Notes
+### To Install Windmill in Local devcontainer
 Make sure Docker is started:
 
 Mac: open /Applications/Docker.app
@@ -88,10 +91,10 @@ Go to http://localhost on port 80
 
 Then you can login for the first time.
 
-
-## Other Notes
+### opeenwebui
 https://openwebui.com/assets/files/whitepaper.pdf
 
+### port forwarding for sveltekit in local devcontainer
 https://code.visualstudio.com/docs/devcontainers/containers#_always-forwarding-a-port
 
 
