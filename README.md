@@ -100,3 +100,10 @@ https://code.visualstudio.com/docs/devcontainers/containers#_always-forwarding-a
 
 ### In onyxia, Dev container extension won't work, because their current vscode implementation has Open Remote SSH off
 ![alt text](image-1.png)
+
+### ALTERNATIVE? starting from vanilla sveltekit
+
+npx sv create app
+cd app
+npm install
+npm run dev
