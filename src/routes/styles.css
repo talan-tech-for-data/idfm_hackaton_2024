@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --font-body: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --color-bg: #ffffff; /* White background */
+    --color-text: #000000; /* Black text */
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-text);
+
+}
+
+header {
+    margin-top: 1.5rem; /* Add a small margin on top of the header */
+}
+
+main {
+    text-align: center;
+    margin-left: 3rem; /* Add margins around the image */
+    margin-right: 3rem; /* Add margins around the image */
+}
+
+h1, h2, p {
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Media query for tablets and larger smartphones */
+@media (max-width: 768px) {
+    main {
+        margin-left: 1rem; /* Reduced left margin for tablets and larger smartphones */
+        margin-right: 1rem; /* Reduced right margin for tablets and larger smartphones */
+    }
+}
+
+/* Media query for smaller tablets and large smartphones */
+@media (max-width: 576px) {
+    main {
+        margin-left: 0.75rem; /* Further reduced left margin for smaller tablets and large smartphones */
+        margin-right: 0.75rem; /* Further reduced right margin for smaller tablets and large smartphones */
+    }
+}
+
+/* Media query for small smartphones */
+@media (max-width: 480px) {
+    main {
+        margin-left: 0.5rem; /* Further reduced left margin for small smartphones */
+        margin-right: 0.5rem; /* Further reduced right margin for small smartphones */
+    }
+}
+
+/* Media query for very small smartphones */
+@media (max-width: 320px) {
+    main {
+        margin-left: 0.25rem; /* Minimal left margin for very small smartphones */
+        margin-right: 0.25rem; /* Minimal right margin for very small smartphones */
+    }
+}
