@@ -104,7 +104,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/ # Needed for Sveltekit
 lib64/
 parts/
 sdist/
