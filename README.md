@@ -27,10 +27,9 @@ nvm install 20
 npm install
 
 
-
 ```
 
-## Install Sveltekit
+## Install Sveltekit in Local Devcontainer
 ### To start work, from zero:
 
 - install nvm
