@@ -9,9 +9,7 @@ tasks:
   install:
     cmds:
       # Install pipx, needed for poetry
-      - apt update -y
-      - apt install -y pipx
-      - apt install -y python3.8-venv
+      - pip install pipx
       - pipx ensurepath
 
       # Install poetry
