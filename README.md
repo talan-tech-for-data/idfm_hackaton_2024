@@ -1,6 +1,73 @@
 # idfm_hackaton_2024
 
-## Install Windmill
+## To Setup this project in Onyxia's VSCode
+- Run:
+```sh
+sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+
+git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
+
+sudo apt-get update -y
+sudo apt-get install -y pipx
+
+pipx install poetry
+
+poetry config virtualenvs.in-project true
+
+poetry install
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm install 20
+
+npm install
+
+
+```
+
+## To Install Sveltekit in Local Devcontainer or Github's devcontainer
+### To start work, from zero:
+- Run:
+```bash
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# activate nvm in current shell
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# install node 20
+nvm install 20
+# install project
+npm install
+
+```
+
+### To Start dev in sveltekit:
+```bash
+# start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+### Other notes on sveltekit
+```bash
+nvm use 20
+npm run build
+```
+
+```bash
+npm run preview -- --open
+```
+
+
+
+## Other Notes
+### To Install Windmill in Local devcontainer
 Make sure Docker is started:
 
 Mac: open /Applications/Docker.app
@@ -24,29 +91,19 @@ Go to http://localhost on port 80
 
 Then you can login for the first time.
 
-## To setup this project in Onyxia's VSCode
-- Run:
-```sh
-sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
-
-git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
-
-sudo apt-get update -y
-sudo apt-get install -y pipx
-
-pipx install poetry
-
-poetry config virtualenvs.in-project true
-
-poetry install
-
-```
-
-
-
-
-## Other Notes
+### opeenwebui
 https://openwebui.com/assets/files/whitepaper.pdf
 
-### Dev container extension won't work, because their current vscode implementation has Open Remote SSH off
+### port forwarding for sveltekit in local devcontainer
+https://code.visualstudio.com/docs/devcontainers/containers#_always-forwarding-a-port
+
+
+### In onyxia, Dev container extension won't work, because their current vscode implementation has Open Remote SSH off
 ![alt text](image-1.png)
+
+### ALTERNATIVE? starting from vanilla sveltekit
+
+npx sv create app
+cd app
+npm install
+npm run dev

@@ -8,9 +8,13 @@ tasks:
 
   install:
     cmds:
+      # Install Python and pip
+      - apt-get update -y
+      - apt-get install -y python3.8-venv
+      - apt-get install -y python3 python3-pip
+      
       # Install pipx, needed for poetry
-      - apt update -y
-      - apt install -y pipx
+      - pip install pipx
       - pipx ensurepath
 
       # Install poetry
@@ -18,8 +22,8 @@ tasks:
       - /root/.local/bin/poetry config virtualenvs.in-project true
   
       # Install tree
-      - apt update -y
-      - apt install -y tree
+      - apt-get update -y
+      - apt-get install -y tree
 
       - task: install_task_completion
 
