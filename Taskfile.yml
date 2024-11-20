@@ -26,8 +26,16 @@ tasks:
       - apt-get install -y tree
 
       - task: install_task_completion
+      - task: install_svelte
 
       - echo 'Success 🥳 !'
+
+  install_svelte:
+    internal: true
+    cmds:
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+      - nvm install 20
+      - npm install
 
   install_task_completion:
     internal: true
