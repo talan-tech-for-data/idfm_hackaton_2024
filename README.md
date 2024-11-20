@@ -45,6 +45,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 20
 # install project
 npm install
+
 ```
 
 ### Start dev:
@@ -91,5 +92,8 @@ Then you can login for the first time.
 ## Other Notes
 https://openwebui.com/assets/files/whitepaper.pdf
 
-### Dev container extension won't work, because their current vscode implementation has Open Remote SSH off
+https://code.visualstudio.com/docs/devcontainers/containers#_always-forwarding-a-port
+
+
+### In onyxia, Dev container extension won't work, because their current vscode implementation has Open Remote SSH off
 ![alt text](image-1.png)
