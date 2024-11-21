@@ -3,9 +3,11 @@
 ## To Setup this project in Onyxia's VSCode
 - Run:
 ```sh
-sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
-
 git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
+
+git clone https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
+
+sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
 
 sudo apt-get update -y
 sudo apt-get install -y pipx
@@ -28,12 +30,14 @@ nvm install 20
 
 npm install
 
+npm run dev -- --open
 
 ```
 
 ## To Install Sveltekit in Local Devcontainer or Github's devcontainer
 ### To start work, from zero:
 - Run:
+
 ```bash
 cd frontend
 # install nvm
@@ -49,6 +53,7 @@ nvm install 20
 # install project
 npm install
 
+npm run dev -- --open
 ```
 
 ### To Start dev in sveltekit:

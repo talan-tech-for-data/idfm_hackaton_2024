@@ -1,0 +1,16 @@
+#########################
+## Sveltekit
+#########################
+
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env #Needed for Windimill
+.env.*
+!.env.example
+.vercel
+.output
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
