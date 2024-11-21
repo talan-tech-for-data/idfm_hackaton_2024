@@ -3,7 +3,7 @@
     let result = '';
 
     async function fetchResult() {
-        const response = await fetch(`http://0.0.0.0:8000/add_two/${number}`);
+        const response = await fetch(`http://localhost:8000/add_two/${number}`);
         const data = await response.json();
         result = data.result;
     }
