@@ -5,8 +5,6 @@
 ```sh
 git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
 
-git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
-
 # git submodule update --init --remote # to pull from the hackaton repo
 
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
@@ -81,6 +79,10 @@ npm run preview -- --open
 
 
 ## Other Notes
+### When creating your vs code in onyxia, forward port 5173 for sveltekit
+<img width="1163" alt="image" src="https://github.com/user-attachments/assets/48169289-48d4-4d5d-8d6f-9974da086ddd">
+
+
 ### To Install Windmill in Local devcontainer
 Make sure Docker is started:
 
