@@ -7,14 +7,10 @@ tasks:
 #########################
 
   install:
-    cmds:
-      # Install Python and pip
-      - apt-get update -y
-      - apt-get install -y python3.8-venv
-      - apt-get install -y python3 python3-pip
-      
+    cmds:      
       # Install pipx, needed for poetry
-      - pip install pipx
+      - apt-get update
+      - apt-get install -y pipx
       - pipx ensurepath
 
       # Install poetry
