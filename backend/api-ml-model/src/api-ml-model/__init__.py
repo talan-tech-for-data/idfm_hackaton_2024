@@ -1,3 +1,3 @@
 from importlib.metadata import version
 
-__version__ = version("idfmhk24")
+__version__ = version("api-ml-model")
