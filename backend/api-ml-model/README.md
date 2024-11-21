@@ -4,7 +4,7 @@ poetry install
 ```
 Run:
 ```
-poetry run fastapi run main.py
+poetry run fastapi run main.py --port 8000
 ```
 
 to launch your api

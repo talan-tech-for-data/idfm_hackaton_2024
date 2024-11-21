@@ -1,3 +1,4 @@
 To run the app run:
->npm run dev -- --open
+npm run dev --port 7000
+
 
