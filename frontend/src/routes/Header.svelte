@@ -1,11 +1,9 @@
 <script>
-	import talanLogo from '$lib/images/talan-logo.svg';
 </script>
 
 <header>
-	<div>
+	<div class="container">
 		<a href="/" class="logo-link">
-			<img src={talanLogo} alt="Talan Logo" class="logo" />
 		</a>
 		<nav>
 			<ul>
@@ -36,6 +34,12 @@
     .logo-link {
         width: fit-content;
         height: fit-content;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;        
     }
 
 	/* Media query for tablets and larger smartphones */

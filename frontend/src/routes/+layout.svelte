@@ -25,7 +25,7 @@
     </main>
 
     <footer>
-        <p style="text-align: center;">
+        <p>
             © 2024<br>
             Talan pour Hackaton IDFM<br>
         </p>
@@ -45,7 +45,7 @@
         flex: 1;
     }
 
-    footer {
+    footer p {
         text-align: center;
         padding: 1rem;
     }
