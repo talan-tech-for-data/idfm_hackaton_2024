@@ -28,7 +28,7 @@ nvm install 20
 
 npm install
 
-npm run dev -- --open --host 0.0.0.0 --port 7000
+npm run dev -- --host 0.0.0.0
 
 #git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
 #git submodule update --init --remote # to pull from the hackaton repo
