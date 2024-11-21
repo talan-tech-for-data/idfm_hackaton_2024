@@ -41,7 +41,9 @@ npm run dev -- --open
 - Run:
 
 ```bash
+
 cd frontend
+
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
@@ -60,6 +62,7 @@ npm run dev -- --open
 
 ### To Start dev in sveltekit:
 ```bash
+
 cd frontend
 # start the server and open the app in a new browser tab
 npm run dev -- --open
