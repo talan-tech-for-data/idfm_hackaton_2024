@@ -3,6 +3,7 @@ import pandas as pd
 
 from .specification import Coordinates
 
+
 def get_journeys(
     api_key: str, departure: Coordinates, arrival: Coordinates, datetime: str
 ) -> pd.DataFrame:
@@ -33,7 +34,7 @@ def get_journeys(
 
     # Process response
     try:
-        data = pd.json_normalize(response.json())
+        data = response.json()
         return data
     except Exception as e:
         raise ValueError(f"Error processing response: {e}")
