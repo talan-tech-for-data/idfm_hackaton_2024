@@ -76,12 +76,12 @@ Linux: sudo systemctl start docker
 and type the following commands:
 
 ```sh
+cd windmill
 curl https://raw.githubusercontent.com/windmill-labs/windmill/main/docker-compose.yml -o docker-compose.yml
 curl https://raw.githubusercontent.com/windmill-labs/windmill/main/Caddyfile -o Caddyfile
 curl https://raw.githubusercontent.com/windmill-labs/windmill/main/.env -o .env
 
 #docker compose up -d
-
 docker compose -f windmill-docker-compose.yml up -d
 ```
 
