@@ -8,7 +8,7 @@
     </a>
     <nav>
         <ul>
-            <li><a href="/talk-to-speech">Talk</a></li>
+            <li><a href="/speech-to-text">Talk here</a></li>
             <li><a href="/itineraire">Itineraire</a></li>
             <li><a href="/mes-preferences">Mes preferences</a></li>
         </ul>
@@ -16,6 +16,7 @@
 </header>
 
 <style>
+
     header {
         display: flex;
         justify-content: center;
