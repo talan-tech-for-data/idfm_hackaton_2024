@@ -5,7 +5,9 @@
 ```sh
 git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
 
-git clone https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
+git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
+
+# git submodule update --init --remote # to pull from the hackaton repo
 
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
 
