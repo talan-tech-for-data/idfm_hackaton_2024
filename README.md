@@ -30,9 +30,13 @@ npm install
 
 #npm run dev -- --host 0.0.0.0
 
+cd ..
+cd hackathon_ia_mobilites_2024
+git submodule update --init
+
 #git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
 #git submodule update --init --remote # to pull from the hackaton repo
-git submodule update --init
+
 
 ```
 
