@@ -16,6 +16,8 @@ poetry config virtualenvs.in-project true
 
 poetry install
 
+cd frontend
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -33,6 +35,7 @@ npm install
 ### To start work, from zero:
 - Run:
 ```bash
+cd frontend
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
@@ -50,6 +53,7 @@ npm install
 
 ### To Start dev in sveltekit:
 ```bash
+cd frontend
 # start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
@@ -77,9 +81,11 @@ and type the following commands:
 
 ```sh
 cd windmill
-curl https://raw.githubusercontent.com/windmill-labs/windmill/main/docker-compose.yml -o docker-compose.yml
-curl https://raw.githubusercontent.com/windmill-labs/windmill/main/Caddyfile -o Caddyfile
-curl https://raw.githubusercontent.com/windmill-labs/windmill/main/.env -o .env
+
+# To start from scratch
+#curl https://raw.githubusercontent.com/windmill-labs/windmill/main/docker-compose.yml -o docker-compose.yml
+#curl https://raw.githubusercontent.com/windmill-labs/windmill/main/Caddyfile -o Caddyfile
+#curl https://raw.githubusercontent.com/windmill-labs/windmill/main/.env -o .env
 
 #docker compose up -d
 docker compose -f windmill-docker-compose.yml up -d
