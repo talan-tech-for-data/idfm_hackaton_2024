@@ -5,10 +5,6 @@
 ```sh
 git clone https://github.com/talan-tech-for-data/idfm_hackaton_2024.git .
 
-git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
-
-# git submodule update --init --remote # to pull from the hackaton repo
-
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
 
 sudo apt-get update -y
@@ -34,6 +30,9 @@ npm install
 
 npm run dev -- --open
 
+#git submodule add https://github.com/IleDeFranceMobilites/hackathon_ia_mobilites_2024/
+git submodule update --init --remote # to pull from the hackaton repo
+
 ```
 
 ## To Install Sveltekit in Local Devcontainer or Github's devcontainer
@@ -58,6 +57,8 @@ nvm install 20
 npm install
 
 npm run dev -- --open
+
+
 ```
 
 ### To Start dev in sveltekit:
