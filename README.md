@@ -82,6 +82,10 @@ npm run preview -- --open
 
 
 ## Other Notes
+### When creating your vs code in onyxia, forward port 5173 for sveltekit
+<img width="1163" alt="image" src="https://github.com/user-attachments/assets/48169289-48d4-4d5d-8d6f-9974da086ddd">
+
+
 ### To Install Windmill in Local devcontainer
 Make sure Docker is started:
 
