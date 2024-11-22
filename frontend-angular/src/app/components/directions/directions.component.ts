@@ -15,6 +15,7 @@ export class DirectionsComponent implements OnInit {
   loading: boolean = false;
   conversationSummary: string = '';
   userDataSummary: string = '';
+  optionsAndMetadata: string = '';
 
   addTwo() {
     if (this.inputNumber !== null) {
@@ -54,8 +55,20 @@ export class DirectionsComponent implements OnInit {
       });
   }
 
+  fetchOptionsAndMetadata() {
+    fetch('http://localhost:8000/options_and_metadata')
+      .then(response => response.json())
+      .then(data => {
+        this.optionsAndMetadata = JSON.stringify(data, null, 2);
+      })
+      .catch(() => {
+        alert('Error fetching options and metadata');
+      });
+  }
+
   ngOnInit() {
     this.fetchConversationSummary();
     this.fetchUserDataSummary();
+    this.fetchOptionsAndMetadata();
   }
 }

@@ -1,5 +1,21 @@
 # idfm_hackaton_2024
 
+# Prez
+
+2 APIs
+- ml-model
+- reading-conversations
+
+
+
+
+
+
+
+
+# Other
+
+
 poetry run python dump.py frontend-angular/src/app app.txt
 
 —Front—
