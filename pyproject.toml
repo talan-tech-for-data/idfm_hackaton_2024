@@ -1,11 +1,8 @@
 [tool.poetry]
-name = "idfmhk24"
+package-mode = false
+name = "idfm_hackaton_2024"
 version = "0.1.0"
 description = ""
-authors = ["Team 9"]
-packages = [
-    { include = "idfmhk24", from = "src" }
-]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -22,6 +19,8 @@ fastapi = "^0.115.5"
 uvicorn = "^0.32.1"
 python-dotenv = "^1.0.1"
 requests = "^2.32.3"
+api_mlmodel = { path = "backend/api-ml-model", develop = true }
+
 
 [tool.poetry.group.dev.dependencies]
 jupyterlab = "^4.3.1"
