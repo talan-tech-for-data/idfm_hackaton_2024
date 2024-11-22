@@ -1,5 +1,7 @@
 # idfm_hackaton_2024
 
+python dump.py frontend-angular/src/app app.txt
+
 —Front—
 P0: Avec la voice, on peuple la BDD
 
