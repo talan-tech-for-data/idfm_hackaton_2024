@@ -1,0 +1,51 @@
+{
+    "users": [
+        {
+            "id": 1234,
+            "name": "Andrew Owen",
+            "age": 26,
+            "mail": "andrew.owen@mail.com"
+        },
+        {
+            "id": 1235,
+            "name": "Susan Que",
+            "age": 45,
+            "mail": "susan.que@mail.com"
+        },
+        {
+            "id": 1236,
+            "name": "John Doe",
+            "age": 53,
+            "mail": "john.doe@mail.com"
+        }
+    ],
+    "preferences": [
+        {
+            "userId": 1234,
+            "travelType": "Tourisme",
+            "bikeRating": 4,
+            "busRating": 3,
+            "metroRating": 5,
+            "walkRating": 2,
+            "travelPreference": "fast"
+        },
+        {
+            "userId": 1235,
+            "travelType": "Business",
+            "bikeRating": 3,
+            "busRating": 4,
+            "metroRating": 4,
+            "walkRating": 3,
+            "travelPreference": "comfortable"
+        },
+        {
+            "userId": 1236,
+            "travelType": "Leisure",
+            "bikeRating": 5,
+            "busRating": 2,
+            "metroRating": 3,
+            "walkRating": 4,
+            "travelPreference": "fast"
+        }
+    ]
+}
