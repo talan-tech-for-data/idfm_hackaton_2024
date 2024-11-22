@@ -15,4 +15,9 @@
 
   <h2>Fetch the Options and Metadata API</h2>
   <pre class="scrollable-box">{{ optionsAndMetadata }}</pre>
+
+  <h2>Fetch Intentions and Entities API</h2>
+  <input type="text" [(ngModel)]="message" placeholder="Enter your message">
+  <button (click)="fetchIntentionsEntities()">Submit</button>
+  <pre class="scrollable-box">{{ intentionsEntities }}</pre>
 </div>
