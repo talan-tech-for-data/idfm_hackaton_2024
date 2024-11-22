@@ -6,7 +6,8 @@
 - ml-model
 - reading-conversations
 
-
+2 fichiers de secrets.env
+PRIM, OPENAI_API_KEY
 
 
 

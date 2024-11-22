@@ -20,7 +20,7 @@ export class DirectionsComponent implements OnInit {
   addTwo() {
     if (this.inputNumber !== null) {
       this.loading = true;
-      fetch(`http://localhost:8000/add_two/${this.inputNumber}`)
+      fetch(`http://localhost:8002/add_two/${this.inputNumber}`)
         .then(response => response.json())
         .then(data => {
           this.result = data.result;
@@ -34,7 +34,7 @@ export class DirectionsComponent implements OnInit {
   }
 
   fetchConversationSummary() {
-    fetch('http://localhost:8001/summarize_conversations')
+    fetch('http://localhost:8003/summarize_conversations')
       .then(response => response.text())
       .then(data => {
         this.conversationSummary = data;
@@ -45,7 +45,7 @@ export class DirectionsComponent implements OnInit {
   }
 
   fetchUserDataSummary() {
-    fetch('http://localhost:8001/summarize_user_data')
+    fetch('http://localhost:8003/summarize_user_data')
       .then(response => response.text())
       .then(data => {
         this.userDataSummary = data;
@@ -56,7 +56,7 @@ export class DirectionsComponent implements OnInit {
   }
 
   fetchOptionsAndMetadata() {
-    fetch('http://localhost:8000/options_and_metadata')
+    fetch('http://localhost:8002/options_and_metadata')
       .then(response => response.json())
       .then(data => {
         this.optionsAndMetadata = JSON.stringify(data, null, 2);
