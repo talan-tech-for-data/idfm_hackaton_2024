@@ -10,77 +10,6 @@
 PRIM, OPENAI_API_KEY
 
 
-
-
-
-
-# Other
-
-
-poetry run python dump.py frontend-angular/src/app app.txt
-
-—Front—
-P0: Avec la voice, on peuple la BDD
-
-P1: Itineraire
-Est-ce qu'on requeter une API à eux
-
-P2: CSS
-
-
-—Back-
-
-Back Saou:
-P0 => 
-
-
-
-Back Andrés:
-P0 => local, et tu push le code
-
-
-API : Demande itineraitres
-routeAPI : options_and_metadata
-P0: 'Nettoyage'
-
-
-durations
-distances
-fare
-air_pollutants
-co2_emissions
-
-tags
-equipments
-additional_information
-
-disruptions
-
-
-OUTPUT: 
-intineraire donné:
-BDD_choix
-    option1
-        hdhdh [features]
-    option2
-        metadta [features]
-    option3 
-        metadta [features]
-    
-
-
-
-P1 :
-API : Demande itineraitres
-routeAPI : optimized_answer (????)
-
-Model abse sur une dataset:
-
-Prez PPT
-[BDD_choix + BDD_Appli  === Label ?]
-
-
-
 ## To Setup frontend
 cd frontend-angular 
 
@@ -241,3 +170,73 @@ npx sv create app
 cd app
 npm install
 npm run dev
+
+
+
+
+# Other
+
+
+poetry run python dump.py frontend-angular/src/app app.txt
+
+—Front—
+P0: Avec la voice, on peuple la BDD
+
+P1: Itineraire
+Est-ce qu'on requeter une API à eux
+
+P2: CSS
+
+
+—Back-
+
+Back Saou:
+P0 => 
+
+
+
+Back Andrés:
+P0 => local, et tu push le code
+
+
+API : Demande itineraitres
+routeAPI : options_and_metadata
+P0: 'Nettoyage'
+
+
+durations
+distances
+fare
+air_pollutants
+co2_emissions
+
+tags
+equipments
+additional_information
+
+disruptions
+
+
+OUTPUT: 
+intineraire donné:
+BDD_choix
+    option1
+        hdhdh [features]
+    option2
+        metadta [features]
+    option3 
+        metadta [features]
+    
+
+
+
+P1 :
+API : Demande itineraitres
+routeAPI : optimized_answer (????)
+
+Model abse sur une dataset:
+
+Prez PPT
+[BDD_choix + BDD_Appli  === Label ?]
+
+
