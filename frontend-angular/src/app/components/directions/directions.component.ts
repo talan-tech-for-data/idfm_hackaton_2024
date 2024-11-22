@@ -16,6 +16,8 @@ export class DirectionsComponent implements OnInit {
   conversationSummary: string = '';
   userDataSummary: string = '';
   optionsAndMetadata: string = '';
+  message: string = '';
+  intentionsEntities: string = '';
 
   addTwo() {
     if (this.inputNumber !== null) {
@@ -64,6 +66,25 @@ export class DirectionsComponent implements OnInit {
       .catch(() => {
         alert('Error fetching options and metadata');
       });
+  }
+
+  fetchIntentionsEntities() {
+    if (this.message.trim() !== '') {
+      fetch('http://localhost:8001/get_intentions_entites', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: this.message })
+      })
+      .then(response => response.json())
+      .then(data => {
+        this.intentionsEntities = JSON.stringify(data, null, 2);
+      })
+      .catch(() => {
+        alert('Error fetching intentions and entities');
+      });
+    }
   }
 
   ngOnInit() {
