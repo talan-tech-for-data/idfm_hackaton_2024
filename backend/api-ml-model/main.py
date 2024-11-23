@@ -68,6 +68,7 @@ def get_routes():
 
     current_time = datetime.now()
     current_time = current_time.strftime("%Y%m%dT%H%M%S")
+    current_time = "20241122T153000"
 
     destination = f"{departure.longitude}%3B%20{departure.latitude}&to={arrival.longitude}%3B%20{arrival.latitude}&datetime={current_time}"
     url = f"https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys?from={destination}"
@@ -89,10 +90,67 @@ def get_routes():
     except Exception as e:
         raise ValueError(f"Error processing response: {e}")
 
+    # Extract
+    journeys = data.get('journeys')
+
+    features = [ {
+        "duration": j.get("duration"),
+        "type": j.get("type"),
+        "nb_transfers": j.get("nb_transfers"),
+        "co2": j.get("co2_emission").get("value"),
+        "walking_duration": j.get("durations").get("walking"),
+        "walking_distance": j.get("distances").get("walking"),
+    } for j in journeys]
+
+    return features
+
+
+@app.get("/summarize/")
+def get_route_params():
+    departure = Coordinates(latitude=48.85021352679651,
+                         longitude=2.4735419963428593)
+
+    arrival = Coordinates(latitude=48.875460818207635,
+                                longitude=2.3088650247211775)
+
+    current_time = datetime.now()
+    current_time = current_time.strftime("%Y%m%dT%H%M%S")
+    current_time = "20241122T153000"
+
+    destination = f"{departure.longitude}%3B%20{departure.latitude}&to={arrival.longitude}%3B%20{arrival.latitude}&datetime={current_time}"
+    url = f"https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys?from={destination}"
+
+    headers = {"Accept": "application/json", "apikey": api_key}
+
+    # API request
+    response = requests.get(url, headers=headers)
+
+    if response.status_code != 200:
+        raise ValueError(
+            f"Failed to fetch data. Status code: {response.status_code}, Message: {response.text}"
+        )
+
+    # Process response
+    try:
+        data = response.json()
+    except Exception as e:
+        raise ValueError(f"Error processing response: {e}")
 
     # Extract
+    journeys = data.get('journeys')
 
-    return response
+    features = [ {
+        "duration": j.get("duration"),
+        "type": j.get("type"),
+        "nb_transfers": j.get("nb_transfers"),
+        "co2": j.get("co2_emission").get("value"),
+        "walking_duration": j.get("durations").get("walking"),
+        "walking_distance": j.get("distances").get("walking"),
+    } for j in journeys]
+
+    return features
+
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8002)
